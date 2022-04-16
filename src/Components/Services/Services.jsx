@@ -6,15 +6,20 @@ import Glasses from '../../img/glasses.png'
 import Humble from '../../img/humble.png'
 import Card from '../Card/Card'
 import Resume from './resume.pdf'
+import { themeContext } from '../../Context'
+import { useContext } from 'react';
 
 
 const Services = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
         <div className="services">
 
             {/* left side */}
             <div className="awesome">
-                <span>My Awesone</span>
+                <span style={{ color: darkMode ? 'white' : '' }}>My Awesone</span>
                 <span>services</span>
                 <span>
                     Lorem ispum is simpley dummy text of printing Lorem

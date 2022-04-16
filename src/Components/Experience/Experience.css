@@ -29,6 +29,7 @@
     height: 4rem;
     background: #fff;
     border-radius: 100%;
+    color: black;
 }
 
 .circle::before{
